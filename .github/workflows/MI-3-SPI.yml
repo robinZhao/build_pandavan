@@ -37,8 +37,6 @@ jobs:
         rm -rf /opt/rt-n56u
         git clone --depth=1 https://github.com/robinZhao/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
-        # 下载预编译的工具链：
-        mkdir -p toolchain-3.4.x
         sh dl_toolchain.sh
         mkdir -p /opt/images/
     - name: Build Firmware
